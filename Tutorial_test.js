@@ -3,8 +3,11 @@ Feature('Tutorial');
 Scenario('test something',  async ({ I }) => {        
     I.amOnPage('file:///' + __filename.replace('Tutorial_test.js', 'test.html').replace(/\\/g, '/'));    
     I.click('#alert-btn');    
-    console.log(await I.grabTextFrom('#alert-btn'));
-    I.acceptPopup();
+    I.wait(2);
+    console.log('Popup text: ' + await I.grabPopupText());        
+    I.acceptPopup();    
+    console.log('Button text: ' + await I.grabTextFrom('#alert-btn'));    
+    I.wait(2);
     /*
     pause();
     I.click('#alert-btn');    
