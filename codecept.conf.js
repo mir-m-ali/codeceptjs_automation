@@ -13,7 +13,7 @@ exports.config = {
   helpers: {
     WebDriver: {
       url: 'https://www.google.com',
-      browser: 'chrome',
+      browser: process.env.BROWSER != undefined ? process.env.BROWSER : 'chrome',
       windowSize: 'maximize',
       desiredCapabilities: {
         'goog:chromeOptions': {
