@@ -1,0 +1,24 @@
+{
+  "name": "codeceptjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^7.33.0",
+    "codeceptjs": "^3.3.5",
+    "webdriverio": "^7.23.0"
+  },
+  "dependencies": {
+    "chromedriver": "*",    
+    "dotenv": "^16.0.0",    
+    "ms-chromium-edge-driver": "*",   
+    "selenium": "~2.20.0", 
+    "selenium-standalone": "*"    
+  }
+}

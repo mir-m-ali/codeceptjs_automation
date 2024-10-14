@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #short-div { height: 40px; margin: 20px; background-color:aqua;}
+
+    </style>
+
+<script>
+let $ = (id) => document.getElementById(id);
+let counter = 1;
+function showAlert() {    
+    $('d1').innerHTML = `Div d1 has ${counter}`;
+    alert('Loaded test.html!');    
+    $('d2').innerHTML = `Div d2 has ${counter++}`;
+}
+
+
+</script>
+</head>
+<body>
+    <button id="alert-btn" onclick="showAlert()">Show Alert</button>    
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="short-div">
+        <select id="select1">
+            <option></option>
+            <option>Option A</option>
+            <option>Option B</option>
+            <option>Option C</option>
+            <option>Option D</option>
+        </select>
+
+        <select id="select2">
+            <option></option>
+            <option>Option A</option>
+            <option>Option B</option>
+            <option>Option C</option>
+            <option>Option D</option>
+        </select>
+    </div>
+    
+</body>
+</html>
