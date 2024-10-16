@@ -13,15 +13,8 @@ exports.config = {
   helpers: {
     WebDriver: {
       url: 'https://www.google.com',
-      browser: process.env.BROWSER != undefined ? process.env.BROWSER : 'chrome',
-      windowSize: 'maximize',
-      /*
-      desiredCapabilities: {
-        'goog:chromeOptions': {
-          'args': ['--disable-web-sockets']
-        }
-      }
-      */
+      browser: process.env.BROWSER != undefined ? process.env.BROWSER : 'MicrosoftEdge',
+      windowSize: 'maximize'
     }
   },
   include: {
@@ -33,5 +26,11 @@ exports.config = {
       enabled: true,
       services: ['selenium-standalone']
     }
-  }
+  },
+ 
+  gherkin: {
+    features: './features/**/*.feature',
+    steps: './steps/*.js'
+  },
+ 
 }
