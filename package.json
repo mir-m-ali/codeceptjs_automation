@@ -20,6 +20,7 @@
     "edgedriver": "^5.6.1",
     "ms-chromium-edge-driver": "*",
     "selenium": "~2.20.0",
-    "selenium-standalone": "*"
+    "selenium-standalone": "*",
+    "selenium-webdriver": "^4.25.0"
   }
 }
